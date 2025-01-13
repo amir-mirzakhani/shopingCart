@@ -1,0 +1,140 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.box {
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 10% auto;
+}
+
+.per-img {
+  width: 100%;
+  height: auto; /* Ensure the image height adjusts to its width */
+  border-radius: 10px 10px 0 0;
+  object-fit: cover; /* Make sure the image covers the container */
+}
+
+.down {
+  padding: 20px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(228, 12%, 48%);
+}
+
+.heading {
+  font-size: 30px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.text-product {
+  color: hsl(228, 12%, 48%);
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.box-price {
+  display: flex;
+  align-items: center;
+}
+.price {
+  color: hsl(158, 36%, 37%);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Fraunces", sans-serif;
+}
+s {
+  color: #888;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through; /* Ensure text has line-through */
+  margin: 0 20%;
+}
+
+.addBtn {
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background-color: hsl(159, 71%, 13%);
+}
+.icon {
+  margin: 0 5px;
+}
+
+@media (min-width: 623px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .up {
+    width: 50%;
+  }
+  .down {
+    width: 50%;
+  }
+  .per-img {
+    content: url("./images/image-product-desktop.jpg");
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title {
+    letter-spacing: 0.5em;
+    margin: 15px 0;
+  }
+  .heading {
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  .text-product {
+    margin: 20px 0;
+  }
+  .box-price {
+    margin: 20px 0;
+  }
+  s {
+    margin: 0 60%;
+  }
+}
